@@ -17,7 +17,7 @@
 var parseArgs = require('minimist');
 var pad = require('pad');
 var chalk = require('chalk');
-var tabtab = require('tabtab');
+//var tabtab = require('tabtab');
 
 var runArgs = [
   { name: 'net', type: 'string', default: 'user',
@@ -131,7 +131,7 @@ if (command === 'help' || command === '--help') {
   return;
 }
 
-if (command === 'completion') {
+/*if (command === 'completion') {
   tabtab.complete('runtime', function(err, data) {
     if (err || !data) {
       return;
@@ -153,7 +153,7 @@ if (command === 'completion') {
     }
   });
   return;
-}
+}*/
 
 var commandHandled = false;
 
